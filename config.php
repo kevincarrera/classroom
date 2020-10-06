@@ -7,8 +7,8 @@ $CFG = new stdClass();
 $CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
 $CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'moodle';
-$CFG->dbuser    = 'sistemas';
+$CFG->dbname    = 'classroom';
+$CFG->dbuser    = 'milenio';
 $CFG->dbpass    = '555bad4c52';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
@@ -18,8 +18,8 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8mb4_general_ci',
 );
 
-$CFG->wwwroot   = 'http://192.168.1.159/classroom';
-$CFG->dataroot  = '/home/sistemas09/PhpstormProjects/moodledata';
+$CFG->wwwroot   = 'https://aula.losninosdelmilenio.pe';
+$CFG->dataroot  = '/classroomdata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;

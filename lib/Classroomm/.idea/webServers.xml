@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="21a2f43d-fbcb-4313-b8d7-0a200195107c" name="Colegio">
+        <fileTransfer rootFolder="/var/www/html/classroom" accessType="SFTP" host="losninosdelmilenio.pe" port="22" sshConfigId="b499e6b8-633d-478a-b190-62787afa09dc" sshConfig="ubuntu@losninosdelmilenio.pe:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

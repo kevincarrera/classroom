@@ -21,34 +21,43 @@
 
     Example context (json): {}
 }}
-<div id="top-footer">
+<div id="top-footer" style="padding-top: 20px; padding-bottom: 20px;">
   <div class="container-fluid">
+    <h3>{{#str}}stayintouch, theme_moove{{/str}}</h3>
+    <h4>{{{getintouchcontent}}}</h4>
     <div class="row">
-        <div class="col-md-7 contact">
-            <h3>{{#str}}stayintouch, theme_moove{{/str}}</h3>
-            <h4>{{{getintouchcontent}}}</h4>
-            <ul>
-                {{#website}}
-                    <li>
-                        <i class="slicon-globe"></i>
-                        <a href="{{{website}}}" target="_blank">{{{website}}}</a>
-                    </li>
-                {{/website}}
-                {{#mobile}}
-                    <li>
-                        <i class="slicon-phone"></i>
-                        <a href="tel:{{{mobile}}}" target="_blank">{{{mobile}}}</a>
-                    </li>
-                {{/mobile}}
-                {{#mail}}
-                    <li>
-                        <i class="slicon-envelope"></i>
-                        <a href="mailto:{{{mail}}}" target="_blank">{{{mail}}}</a>
-                    </li>
-                {{/mail}}
-            </ul>
+      <div class="col-md-6 contact">
+        <ul>
+            <li>
+              <i class="slicon-location-pin"></i>
+              <a href="https://www.google.com/maps/@-10.9396669,-77.6485429,3a,75y,67.43h,90t/data=!3m7!1e1!3m5!1sAoMbHdfw9gOvkGCYVMJ6ig!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DAoMbHdfw9gOvkGCYVMJ6ig%26output%3Dthumbnail%26cb_client%3Dsearch.revgeo_and_fetch.gps%26thumb%3D2%26w%3D96%26h%3D64%26yaw%3D67.434975%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"
+                 target="_blank" >C.P. La Chilampa Mz.C, Lt.1-A, Végueta-Huaura-Lima</a>
+            <li>
+            {{^website}}
+                </li>
+                    <i class="slicon-globe"></i>
+                    <a href="{{{website}}}" target="_blank">{{{website}}}</a>
+                </li>
+            {{/website}}
+        </ul>
+      </div>
+      <div class="col-md-4 contact">
+        <ul>
+            {{#mobile}}
+                <li>
+                    <i class="slicon-phone"></i>
+                    <a href="tel:{{{mobile}}}" target="_blank">{{{mobile}}}</a>
+                </li>
+            {{/mobile}}
+            {{#mail}}
+                <li>
+                    <i class="slicon-envelope"></i>
+                    <a href="mailto:{{{mail}}}" target="_blank">{{{mail}}}</a>
+                </li>
+            {{/mail}}
+        </ul>
         </div>
-        <div class="col-md-5 social">
+        <div class="col-md-2 social">
           <ul>
               {{#facebook}}
                 <li>
@@ -99,7 +108,7 @@
               {{/instagram}}
           </ul>
 
-          {{{ output.standard_footer_html }}}
+          {{{/ output.standard_footer_html }}}
         </div>
     </div>
   </div>

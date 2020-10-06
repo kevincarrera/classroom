@@ -22,7 +22,7 @@
     Example context (json): {}
 }}
 
-{{> theme_moove/accessibilitybar }}
+<!--{{> theme_moove/accessibilitybar }}-->
 
 <nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
     {{#hasdrawertoggle}}
@@ -41,8 +41,8 @@
                 <img src="{{output.get_logo}}" alt="{{sitename}}">
             </span>
         {{/ output.get_logo }}
-        {{^ output.get_logo }}
-            <span class="site-name d-none d-md-inline">{{{ sitename }}}</span>
+        {{# output.get_logo }}
+            <span class="site-name d-none d-md-inline" style="font-size: 35px !important; color: #02693f !important;padding-left: 50px !important;"> Aula Virtual - {{sitename}}</span>
         {{/ output.get_logo }}
     </a>
 
